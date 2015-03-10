@@ -68,9 +68,9 @@
 }
 
 .hours-container {
-    animation: rotate 43200s infinite steps(60);
-    -webkit-animation: rotate 43200s infinite steps(60);
-    -moz-animation: rotate 43200s infinite steps(60);
+    animation: rotate 43200s infinite linear;
+    -webkit-animation: rotate 43200s infinite linear;
+    -moz-animation: rotate 43200s infinite linear;
 }
 
 .minutes {
@@ -85,9 +85,9 @@
 }
 
 .minutes-container {
-    animation: rotate 3600s infinite steps(60);
-    -webkit-animation: rotate 3600s infinite steps(60);
-    -moz-animation: rotate 3600s infinite steps(60);
+    animation: rotate 3600s infinite linear;
+    -webkit-animation: rotate 3600s infinite linear;
+    -moz-animation: rotate 3600s infinite linear;
 }
 
 .seconds {
