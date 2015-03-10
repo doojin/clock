@@ -20,6 +20,24 @@ function initClock() {
         element.style.transform = 'rotate(' + hand.angle + 'deg)';
         element.style.webkitTransform  = 'rotate(' + hand.angle + 'deg)';
     });
+    
+    var containers = document.querySelectorAll('.seconds-container');
+    initSecondsHandBounce();
+}
+
+function initSecondsHandBounce() {
+    setInterval(function() {
+        var container = document.querySelector('.seconds-container');
+        
+        if (container.angle == undefined) {
+            container.angle = 0;
+        }
+        
+        container.angle += 6;
+        
+        container.style.transform = 'rotate(' + container.angle + 'deg)';
+        container.style.webkitTransform = 'rotate(' + container.angle + 'deg)';
+    }, 1000);
 }
 
 initClock();
