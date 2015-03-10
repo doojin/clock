@@ -3,6 +3,19 @@
         transform: rotateZ(360deg);
     }
 }
+
+@-webkit-keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
 .clock-container {
     background: #eee;
     border-radius: 5%;
@@ -55,6 +68,8 @@
 
 .hours-container {
     animation: rotate 216000s infinite steps(60);
+    -webkit-animation: rotate 216000s infinite steps(60);
+    -moz-animation: rotate 216000s infinite steps(60);
 }
 
 .minutes {
@@ -69,6 +84,8 @@
 
 .minutes-container {
     animation: rotate 3600s infinite steps(60);
+    -webkit-animation: rotate 3600s infinite steps(60);
+    -moz-animation: rotate 3600s infinite steps(60);
 }
 
 .seconds {
@@ -82,5 +99,7 @@
 }
 
 .seconds-container {
+    -webkit-animation: rotate 60s infinite steps(60);
+    -moz-animation: rotate 60s infinite steps(60);
     animation: rotate 60s infinite steps(60);
 }
